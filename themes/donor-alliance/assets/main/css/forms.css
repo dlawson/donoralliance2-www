@@ -1,0 +1,304 @@
+/**
+ * Forms
+ */
+
+/**
+ * GravityForms Style Overrides
+ */
+
+/* General GravityForms Styles */
+
+.validation_message,
+.validation_error {
+	color: #f00;
+	margin-top: 2px;
+}
+.bg-alt {
+	background: #333;
+}
+.gf_progressbar_wrapper {
+	border-bottom: #4d4d4d solid 1px;
+	border-top: #4d4d4d solid 1px;
+	margin-bottom: 35px;
+	padding: 10px 0;
+}
+.gf_progressbar_title {
+	display: none;
+}
+.gf_progressbar {
+	background: #750925;
+}
+.gf_progressbar_percentage {
+	background: #ed174f;
+	font-size: 16px;
+	font-weight: bold;
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+}
+.gform_body .gfield {
+	margin-bottom: 7px;
+}
+.gform_body .gfield.wide-label {
+	padding-left: 150px;
+}
+.gfield.hide-label {
+	padding: 0;
+}
+
+.gfield.hide-label .gfield_label {
+	display: none;
+}
+
+.gform_body .gfield.checkbox-radio-horizontal {
+	height: 30px;
+	line-height: 30px;
+}
+
+.gfield_radio{
+	padding-top: 50px !important;
+	position: relative;
+	display: block;
+}
+
+.gform_body .gfield_html {
+	padding: 0;
+	position: static;
+}
+
+.gform_body .gfield h3 {
+	margin-top: 20px;
+}
+.gform_body .gfield .section-title {
+	margin-bottom: 15px;
+	margin-top: 20px;
+}
+
+.gform_body .gfield_label { 
+	display: block;
+	float: left;
+	width: 210px;
+
+/*	left: 0;
+	position: absolute;
+	top: 4px;*/
+}
+.gform_body .checkbox-radio .gfield_label {
+	top: 0;
+}
+
+.gform_body input[type='text'],
+.gform_body input[type='email'],
+.gform_body textarea,
+.gform_body select {
+	border: 0;
+	padding: 3px 3px 4px;
+	width: 320px;
+}
+.gform_body select {
+	height: 23px;
+	width: 320px;
+}
+
+/* Stack-Label Styles */
+.gform_body .stack-label .gfield_label {
+	position: static;
+}
+.gform_body .gfield.stack-label {
+	padding: 0;
+}
+
+/* Form Footer Styles */
+.gform_page_footer {
+	margin-top: 34px;
+	text-align: left;
+}
+.gform_page_footer input[type='button'],
+.gform_page_footer .gform_button {
+	display: -moz-inline-box; /* FF2 */
+	display: inline-block; /* Standard. IE8+, Saf, FF3+ */
+	/**
+	 * @bugfix inline-block fix
+	 * @see http://blog.mozilla.com/webdev/2009/02/20/cross-browser-inline-block/
+	 * @valid no
+	 */
+	zoom: 1;
+	*display: inline;
+
+	border: 0;
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	height: 36px;
+	padding: 0 21px;
+	text-transform: uppercase;
+}
+.gform_page_footer .gform_previous_button {
+	background: #750925;
+}
+.gform_page_footer .gform_next_button,
+.gform_page_footer .gform_button {
+	background: #ed1751;
+}
+
+/* Radio Buttons, Checkboxes */
+.gform_body .gfield.hide-label .gfield_radio,
+.gform_body .gfield.hide-label .gfield_checkbox {
+	margin-bottom: 15px;
+	position: relative;
+}
+.gform_body .gfield_radio li,
+.gform_body .gfield_checkbox li {
+	margin-bottom: 3px;
+}
+.gform_body .checkbox-radio-horizontal .gfield_radio li,
+.gform_body .checkbox-radio-horizontal .gfield_checkbox li {
+	float: left;
+	margin: 0 55px;
+}
+html.ie8 .gform_body .checkbox-radio-horizontal .gfield_radio li,
+html.ie8 .gform_body .checkbox-radio-horizontal .gfield_checkbox li {
+	margin: 0 54px;
+}
+html.ie7 .gform_body .checkbox-radio-horizontal .gfield_radio li,
+html.ie7 .gform_body .checkbox-radio-horizontal .gfield_checkbox li {
+	margin: 0 53px;
+}
+
+.gform_body .checkbox-radio-horizontal .gfield_label {
+	left: 8px;
+}
+.gform_body .gfield_radio label,
+.gform_body .gfield_checkbox label {
+	position: static;
+}
+.gform_body .hide-checkbox-radio-labels .gfield_radio label,
+.gform_body .hide-checkbox-radio-labels .gfield_checkbox label {
+	display: none;
+}
+.gform_body .gfield_radio input,
+.gform_body .gfield_checkbox input {
+	margin-right: 5px;
+}
+
+.ginput_complex .ginput_full, .ginput_complex .ginput_right, .ginput_complex .ginput_left{
+	position:relative;
+	display:block;
+	margin-bottom:15px;
+}
+.ginput_complex label {
+	position:absolute;
+	top:4px;
+	left:-105px;
+}
+.gform_heading {
+	margin-bottom:10px;
+}
+
+.gform_body ul, .gform_body li {
+	list-style:none;
+	padding:0;
+	margin: 0 0 15px 0 !important;
+}
+
+.gfield_required {
+	color:#6c8e1d;
+}
+
+.gform_body label {
+	margin:0;
+	font-weight:bold;
+}
+
+.gform_body input[type="text"] {
+	border:solid;
+	border-width:1px;
+	border-color:#c7c7c7;
+	height:15px;
+}
+
+.gform_body textarea {
+	border:solid;
+	border-width:1px;
+	border-color:#c7c7c7;
+}
+
+.gform_body .textAbove textarea{
+	margin-top:50px;
+}
+
+.gform_footer input[type="submit"]{
+	background:url(../img/submitBtn.png);
+	border:none;
+	float:right;
+	height:30px;
+	width:86px;
+	text-indent: -9999px;
+}
+.form-newsletter {
+	background-color: #fff;
+	border: #c6c6c6 solid 1px;
+	padding: 0 23px 0 9px;
+	position: absolute;
+	right: 0;
+	top: 3px;
+	width: 170px;
+}
+html .form-newsletter .gform_body ul,
+html .form-newsletter .gform_body li,
+html .form-newsletter .gform_body .gfield {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+.form-newsletter input[type='text'] {
+	border: 0;
+	height: 23px;
+	width: 160px;
+}
+.form-newsletter input[type="submit"] {
+	background: url(../img/sprite-y.24bit.png) 116px -291px;
+	border: 0;
+	display: block;
+	height: 23px;
+	overflow: hidden;
+	position: absolute;
+	right: 1px;
+	text-indent: -1000px;
+	top: 1px;
+	width: 23px;
+}
+.form-newsletter .gfield_label {
+	display: none !important;
+}
+
+.page-id-1955,
+.page-id-1960,
+#surveyForm {
+	margin-top: 40px;
+	clear: both;
+}
+.page-id-1955 .gfield,
+.page-id-1960 .gfield,
+#surveyForm .gfield {
+	padding-bottom: 20px;
+}
+.page-id-1955 .gfield_label,
+.page-id-1960 .gfield_label,
+#surveyForm .gfield_label {
+	float: none;
+	margin-bottom: 15px;
+	width: 420px;
+}
+.page-id-1955 textarea,
+.page-id-1960 textarea,
+#surveyForm textarea {
+	margin-top: 0;
+}
+.page-id-1955 .gfield_radio,
+.page-id-1960 .gfield_radio,
+#surveyForm .gfield_radio {
+	padding-top: 0 !important;
+}
+
+
+

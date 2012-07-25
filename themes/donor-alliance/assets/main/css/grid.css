@@ -1,0 +1,29 @@
+.col {
+	float: left;
+	margin-left: 50px;
+}
+.col-ab {
+	width: 530px;
+}
+.col-c {
+	width: 225px;
+}
+
+.col-a {
+	width: 125px;
+}
+.col-bc {
+	width: 630px;
+}
+
+.col-a, .col-ab, .col-abc {
+	margin-left: 0;
+}
+
+.col-abc {
+	float: none;
+}
+
+.col-a .nav li {
+	float: none;
+}

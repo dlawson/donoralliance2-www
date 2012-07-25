@@ -1,0 +1,24 @@
+body,
+#carousel-main .subtitle,
+.archive .post .title,
+.form-newsletter input,
+.post .subtitle,
+.post-event .header,
+.section-wall-of-honor .section-title,
+.single .post-quilt .title,
+.touts .post-tout .title {
+	font-family: 'lora', serif;
+}
+
+#carousel-main .title,
+#carousel-main .more,
+#nav-aux,
+.btn,
+.buckets .title,
+.button,
+.post .title,
+.post .more,
+.section-title,
+.widget_archive_event {
+	font-family: 'neoretrofill', sans-serif;
+}

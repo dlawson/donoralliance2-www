@@ -1,0 +1,40 @@
+/**
+ * Fonts
+ */
+
+@font-face {
+    font-family: 'lato';
+    src: url('../fonts/lato/regular/lato-regular-webfont.eot');
+    src: url('../fonts/lato/regular/lato-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lato/regular/lato-regular-webfont.woff') format('woff'),
+         url('../fonts/lato/regular/lato-regular-webfont.ttf') format('truetype'),
+         url('../fonts/lato/regular/lato-regular-webfont.svg#LatoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/**
+ * Typography
+ */
+
+#carousel-main .title,
+#nav-aux,
+.btn,
+.button,
+.archive .post-event .more,
+.section-title,
+.widget_archive_event {
+	font-family: 'lato', sans-serif;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+
+/**
+ * Structure
+ */
+
+#nav-aux .nav-donor .sub-menu-container {
+	left: -14px;
+}

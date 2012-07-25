@@ -1,0 +1,1 @@
+<?php lrxd_gravity_form('newsletter'); ?>

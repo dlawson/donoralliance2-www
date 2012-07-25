@@ -1,0 +1,36 @@
+/**
+ * Our Stories
+ */
+
+.page-template-page-our-stories-php #main .in {
+	padding-top: 500px;
+	position: relative;
+}
+.page-template-page-our-stories-php .stories {
+	position: absolute;
+}
+.page-template-page-our-stories-php .stories-donor {
+	left: 52px;
+	top: -15px;
+}
+.page-template-page-our-stories-php .stories-recipient {
+	right: 0;
+	top: -0;
+}
+.page-template-page-our-stories-php .btn-share-your-story {
+	float: right;
+}
+
+
+/**
+ * Submit To The Quilt
+ */
+
+.page-template-page-quilt-submit-php .col-ab {
+	border-right: #ccc solid 1px;
+	width: 529px;
+}
+.page-template-page-quilt-submit-php .col-c {
+	margin-left: 22px;
+	width: 253px;
+}

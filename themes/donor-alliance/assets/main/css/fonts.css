@@ -1,0 +1,60 @@
+/**
+ * Lora
+ */
+
+@font-face {
+    font-family: 'lora';
+    src: url('../fonts/lora/bold/lora-bold-webfont.eot');
+    src: url('../fonts/lora/bold/lora-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lora/bold/lora-bold-webfont.woff') format('woff'),
+         url('../fonts/lora/bold/lora-bold-webfont.ttf') format('truetype'),
+         url('../fonts/lora/bold/lora-bold-webfont.svg#LoraBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'lora';
+    src: url('../fonts/lora/bold-italic/lora-bolditalic-webfont.eot');
+    src: url('../fonts/lora/bold-italic/lora-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lora/bold-italic/lora-bolditalic-webfont.woff') format('woff'),
+         url('../fonts/lora/bold-italic/lora-bolditalic-webfont.ttf') format('truetype'),
+         url('../fonts/lora/bold-italic/lora-bolditalic-webfont.svg#LoraBoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'lora';
+    src: url('../fonts/lora/italic/lora-italic-webfont.eot');
+    src: url('../fonts/lora/italic/lora-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lora/italic/lora-italic-webfont.woff') format('woff'),
+         url('../fonts/lora/italic/lora-italic-webfont.ttf') format('truetype'),
+         url('../fonts/lora/italic/lora-italic-webfont.svg#LoraItalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'lora';
+    src: url('../fonts/lora/regular/lora-regular-webfont.eot');
+    src: url('../fonts/lora/regular/lora-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lora/regular/lora-regular-webfont.woff') format('woff'),
+         url('../fonts/lora/regular/lora-regular-webfont.ttf') format('truetype'),
+         url('../fonts/lora/regular/lora-regular-webfont.svg#LoraRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/**
+ * NeoRetroFill
+ */
+
+@font-face {
+    font-family: 'neoretrofill';
+    src: url('../fonts/neoretrofill/regular/neorf___-webfont.eot');
+    src: url('../fonts/neoretrofill/regular/neorf___-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/neoretrofill/regular/neorf___-webfont.woff') format('woff'),
+         url('../fonts/neoretrofill/regular/neorf___-webfont.ttf') format('truetype'),
+         url('../fonts/neoretrofill/regular/neorf___-webfont.svg#LoraRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
