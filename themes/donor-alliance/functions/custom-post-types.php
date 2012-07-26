@@ -18,10 +18,10 @@ function da_register_custom_post_types() {
 	
 	$args = array(
 		'labels' => array(
-			'name' => __('Donor Stories', 'da'),
-			'singular_name' => __('Donor Story', 'da')
+			'name' => __('Donor Stories', 'da-admin'),
+			'singular_name' => __('Donor Story', 'da-admin')
 		),
-		'description' => __('Donor success stories', 'da'),
+		'description' => __('Donor success stories', 'da-admin'),
 		'public' => true,
 		'exclude_from_search' => false,
 		'publicly_queryable' => true,
@@ -49,10 +49,10 @@ function da_register_custom_post_types() {
 	
 	$args = array(
 		'labels' => array(
-			'name' => __('Recipient Stories', 'da'),
-			'singular_name' => __('Recipient Story', 'da')
+			'name' => __('Recipient Stories', 'da-admin'),
+			'singular_name' => __('Recipient Story', 'da-admin')
 		),
-		'description' => __('Recipient success stories', 'da'),
+		'description' => __('Recipient success stories', 'da-admin'),
 		'public' => true,
 		'exclude_from_search' => false,
 		'publicly_queryable' => true,
@@ -80,10 +80,10 @@ function da_register_custom_post_types() {
 	
 	$args = array(
 		'labels' => array(
-			'name' => __('Volunteer Stories', 'da'),
-			'singular_name' => __('Volunteer Story', 'da')
+			'name' => __('Volunteer Stories', 'da-admin'),
+			'singular_name' => __('Volunteer Story', 'da-admin')
 		),
-		'description' => __('Volunteer success stories', 'da'),
+		'description' => __('Volunteer success stories', 'da-admin'),
 		'public' => true,
 		'exclude_from_search' => false,
 		'publicly_queryable' => true,
@@ -110,10 +110,10 @@ function da_register_custom_post_types() {
 	
 	$args = array(
 		'labels' => array(
-			'name' => __('Events', 'da'),
-			'singular_name' => __('Event', 'da')
+			'name' => __('Events', 'da-admin'),
+			'singular_name' => __('Event', 'da-admin')
 		),
-		'description' => __('Donor Alliance Calander Events', 'da'),
+		'description' => __('Donor Alliance Calander Events', 'da-admin'),
 		'public' => true,
 		'exclude_from_search' => false,
 		'has_archive' => true,
@@ -142,10 +142,10 @@ function da_register_custom_post_types() {
 	
 	$args = array(
 		'labels' => array(
-			'name' => __('Programs', 'da'),
-			'singular_name' => __('Program', 'da')
+			'name' => __('Programs', 'da-admin'),
+			'singular_name' => __('Program', 'da-admin')
 		),
-		'description' => __('Donor Alliance Programs', 'da'),
+		'description' => __('Donor Alliance Programs', 'da-admin'),
 		'public' => true,
 		'exclude_from_search' => false,
 		'publicly_queryable' => true,
@@ -174,8 +174,8 @@ function da_register_custom_post_types() {
 	
 	$args = array(
 		'labels' => array(
-			'name' => __('News Items', 'da'),
-			'singular_name' => __('News Item', 'da')
+			'name' => __('News Items', 'da-admin'),
+			'singular_name' => __('News Item', 'da-admin')
 		),
 		'public' => true,
 		'exclude_from_search' => false,
@@ -204,10 +204,10 @@ function da_register_custom_post_types() {
 	
 	$args = array(
 		'labels' => array(
-			'name' => __('Quilt Squares', 'da'),
-			'singular_name' => __('Quilt Square', 'da')
+			'name' => __('Quilt Squares', 'da-admin'),
+			'singular_name' => __('Quilt Square', 'da-admin')
 		),
-		'description' => __('Images of submitted quilt squares for the virtual quilt', 'da'),
+		'description' => __('Images of submitted quilt squares for the virtual quilt', 'da-admin'),
 		'public' => true,
 		'exclude_from_search' => true,
 		'show_ui' => true,
@@ -230,8 +230,8 @@ function da_register_custom_post_types() {
 	
 	$args = array(
 		'labels' => array(
-			'name' => __('Wall Of Honor', 'da'),
-			'singular_name' => __('Wall Of Honor', 'da')
+			'name' => __('Wall Of Honor', 'da-admin'),
+			'singular_name' => __('Wall Of Honor', 'da-admin')
 		),
 		'public' => true,
 		'exclude_from_search' => true,
