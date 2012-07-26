@@ -20,7 +20,7 @@ class WP_Widget_Archives_Event extends  WP_Widget_Archives {
 		extract($args);
 		$c = ! empty( $instance['count'] ) ? '1' : '0';
 		$d = ! empty( $instance['dropdown'] ) ? '1' : '0';
-		$title = apply_filters('widget_title', empty($instance['title']) ? __('', 'da') : $instance['title'], $instance, $this->id_base);
+		$title = apply_filters('widget_title', empty($instance['title']) ? '' : __($instance['title'], 'da') , $instance, $this->id_base);
 
 		echo $before_widget;
 		if ( $title )
