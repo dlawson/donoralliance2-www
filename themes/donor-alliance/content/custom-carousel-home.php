@@ -37,7 +37,7 @@
 			break;
 	}
 	
-	$read_more_format =  _x('Read %s Story', 'Homepage carousel Read More link.  %s is the slot for the possessive adjective', 'da');
+	$read_more_format =  _x('Read %s\'s Story', 'Homepage carousel Read More link.  %s is the slot for the possessive adjective. "Read ___ Story"', 'da');
 	$read_more = sprintf($read_more_format, $gender_possessive);
 ?>
 <div id="slide-<?php the_ID(); ?>" <?php post_class('slide type-'.$post_type); ?>>

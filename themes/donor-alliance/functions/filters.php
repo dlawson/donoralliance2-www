@@ -34,13 +34,13 @@ function lrxd_get_theme_settings_options ($cfct_options) {
 		'fields' => array(
 			'copyright' => array(
 				'type' => 'text',
-				'label' => __('Copyright / legal footer text', 'da'),
+				'label' => __('Copyright / legal footer text', 'da-admin'),
 				'name' => 'copyright',
 				'class' => 'cfct-text-long',
 			),
 			'analytics' => array(
 				'type' => 'textarea',
-				'label' => __('Analytics Code', 'da'),
+				'label' => __('Analytics Code', 'da-admin'),
 				'name' => 'analytics',
 				'class' => 'cfct-text-long',
 			),
@@ -53,57 +53,57 @@ function lrxd_get_theme_settings_options ($cfct_options) {
 		'fields' => array(
 			'bucket-title-left' => array(
 				'type' => 'text',
-				'label' => __('Left Bucket Title', 'da'),
+				'label' => __('Left Bucket Title', 'da-admin'),
 				'name' => 'bucket-title-left',
 				'class' => 'cfct-text-long',
 			),
 			'bucket-link-left' => array(
 				'type' => 'text',
-				'label' => __('Left Bucket Link', 'da'),
+				'label' => __('Left Bucket Link', 'da-admin'),
 				'name' => 'bucket-link-left',
 				'class' => 'cfct-text-long',
 			),
 			'bucket-content-left' => array(
 				'type' => 'textarea',
-				'label' => __('Left Bucket Text', 'da'),
+				'label' => __('Left Bucket Text', 'da-admin'),
 				'name' => 'bucket-content-left',
 				'class' => 'cfct-text-long',
 			),
 			
 			'bucket-title-middle' => array(
 				'type' => 'text',
-				'label' => __('Middle Bucket Title', 'da'),
+				'label' => __('Middle Bucket Title', 'da-admin'),
 				'name' => 'bucket-title-middle',
 				'class' => 'cfct-text-long',
 			),
 			'bucket-link-middle' => array(
 				'type' => 'text',
-				'label' => __('Middle Bucket Link', 'da'),
+				'label' => __('Middle Bucket Link', 'da-admin'),
 				'name' => 'bucket-link-middle',
 				'class' => 'cfct-text-long',
 			),
 			'bucket-content-middle' => array(
 				'type' => 'textarea',
-				'label' => __('Middle Bucket Text', 'da'),
+				'label' => __('Middle Bucket Text', 'da-admin'),
 				'name' => 'bucket-content-middle',
 				'class' => 'cfct-text-long',
 			),
 			
 			'bucket-title-right' => array(
 				'type' => 'text',
-				'label' => __('Right Bucket Title', 'da'),
+				'label' => __('Right Bucket Title', 'da-admin'),
 				'name' => 'bucket-title-right',
 				'class' => 'cfct-text-long',
 			),
 			'bucket-link-right' => array(
 				'type' => 'text',
-				'label' => __('Right Bucket Link', 'da'),
+				'label' => __('Right Bucket Link', 'da-admin'),
 				'name' => 'bucket-link-right',
 				'class' => 'cfct-text-long',
 			),
 			'bucket-content-right' => array(
 				'type' => 'textarea',
-				'label' => __('Right Bucket Text', 'da'),
+				'label' => __('Right Bucket Text', 'da-admin'),
 				'name' => 'bucket-content-right',
 				'class' => 'cfct-text-long',
 			),
@@ -116,14 +116,14 @@ function lrxd_get_theme_settings_options ($cfct_options) {
 		'fields' => array(
 			'donor-intro' => array(
 				'type' => 'textarea',
-				'label' => __('Donors Intro Copy', 'da'),
+				'label' => __('Donors Intro Copy', 'da-admin'),
 				'name' => 'donor-intro',
 				'help' => '<br />Introductory text for Donors page',
 				'class' => 'cfct-text-long',
 			),
 			'recipient-intro' => array(
 				'type' => 'textarea',
-				'label' => __('Recipients Intro Copy', 'da'),
+				'label' => __('Recipients Intro Copy', 'da-admin'),
 				'name' => 'recipient-intro',
 				'help' => '<br />Introductory text for Recipients page',
 				'class' => 'cfct-text-long',
@@ -137,13 +137,13 @@ function lrxd_get_theme_settings_options ($cfct_options) {
 		'fields' => array(
 			'facebook' => array(
 				'type' => 'text',
-				'label' => __('Facebook Url', 'da'),
+				'label' => __('Facebook Url', 'da-admin'),
 				'name' => 'facebook',
 				'class' => 'cfct-text-long',
 			),
 			'twitter' => array(
 				'type' => 'text',
-				'label' => __('Twitter Url', 'da'),
+				'label' => __('Twitter Url', 'da-admin'),
 				'name' => 'twitter',
 				'class' => 'cfct-text-long',
 			),

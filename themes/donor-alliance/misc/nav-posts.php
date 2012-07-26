@@ -17,6 +17,6 @@
 
 ?>
 <div class="pagination">
-	<span class="previous"><?php previous_posts_link(__('&laquo; Previous', 'da')) ?></span>
-	<span class="next"><?php next_posts_link(__('Next &raquo;', 'da')) ?></span>
+	<span class="previous">&laquo; <?php previous_posts_link(_x('Previous', 'Post navigation link', 'da')); ?></span>
+	<span class="next"><?php next_posts_link(_x('Next', 'Post navigation link', 'da')); ?>  &raquo;</span>
 </div>

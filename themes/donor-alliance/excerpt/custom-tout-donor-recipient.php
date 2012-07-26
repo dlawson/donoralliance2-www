@@ -21,6 +21,10 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
 $story_detail = lrxd_get_post_meta('story-detail', 'donor-recipient');
 $content = lrxd_get_post_meta('aside', 'donor-recipient');
 
+$story_name = get_the_title($post->ID);
+$read_more_format = _x('Read %s\'s Story', 'Read More link for Donor/Recipient list item.  "Read Larry\'s Story"', 'da');
+$read_more = sprintf($read_more_format, $story_name);
+
 ?>
 <div <?php post_class('post-tout tout-donor-recipient'); ?>>
 	<?php if ( has_post_thumbnail() ): ?>
@@ -38,5 +42,5 @@ $content = lrxd_get_post_meta('aside', 'donor-recipient');
 	<div class="content">
 		<?php echo $content; ?>
 	</div>
-	<a href="<?php the_permalink(); ?>" class="more">Read <?php echo da_possessify_name( get_the_title($post->ID) ); ?> Story</a>
+	<a href="<?php the_permalink(); ?>" class="more"><?php echo $read_more ?></a>
 </div>

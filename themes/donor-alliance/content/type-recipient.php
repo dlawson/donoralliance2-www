@@ -20,6 +20,10 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
 
 global $post;
 
+$story_name = get_the_title($post->ID);
+$story_title_format = _x('%s\'s Story', 'Donor/Recipient story title.  %s is the placeholder for the person whose story it is.  "Larry\'s Story"', 'da');
+$story_title = sprintf($story_title_format, $story_name);
+
 $story_detail = lrxd_get_post_meta('story-detail', 'donor-recipient');
 
 ?>
@@ -30,7 +34,7 @@ $story_detail = lrxd_get_post_meta('story-detail', 'donor-recipient');
 			<?php cfct_misc('flash-photo-interior') ?>
 		</div>
 	<?php endif ?>
-	<h1 class="title"><?php echo da_possessify_name( get_the_title($post->ID) ); ?> Story</h1>
+	<h1 class="title"><?php echo $story_title; ?></h1>
 	<?php if ($story_detail): ?>
 		<h2 class="subtitle"><?php echo $story_detail; ?></h2>
 	<?php endif ?>

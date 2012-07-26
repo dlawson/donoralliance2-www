@@ -20,9 +20,13 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
 
 get_header();
 $content = cfct_get_option('donor-intro');
+
+$section_title = _x('Donor Family Stories', 'Donor Family Stories list page.  Section title.', 'da');
+
+
 ?>
 <section class="page-archive-donor">
-	<h1 class="section-title">Donor Family Stories</h1>
+	<h1 class="section-title"><?php echo $section_title; ?></h1>
 	<?php if ($content): ?>
 		<div class="page-content">
 			<?php echo $content; ?>

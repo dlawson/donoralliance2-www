@@ -37,7 +37,9 @@ include_once(CFCT_PATH.'functions/widgets.php');
 include_once(CFCT_PATH.'functions/actions.php');
 include_once(CFCT_PATH.'functions/filters.php');
 
-define('DA_BTN_SHARE_YOUR_STORY', '<a href="'.da_get_page_url('submit-a-story').'" class="btn btn-share-your-story"><span>Share Your Story</span></a>');
+
+$btn_share_your_story_text = _x('Share Your Story', 'Text for link to Share Your Story page', 'da');
+define('DA_BTN_SHARE_YOUR_STORY', '<a href="'.da_get_page_url('submit-a-story').'" class="btn btn-share-your-story"><span>'.$btn_share_your_story_text.'</span></a>');
 define('DA_ARCHIVE_URL_DONORS', 'donors/');
 define('DA_ARCHIVE_URL_RECIPIENTS', 'recipients/');
 

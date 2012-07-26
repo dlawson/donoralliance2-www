@@ -23,8 +23,7 @@ global $wp_query;
 global $da_months;
 
 $query_vars = $wp_query->query_vars;
-
-$title = __('Events', 'da');
+$title = _x('Events', 'Events page.  Section title.', 'da');
 $archive_year = get_query_var('year');
 $archive_month = get_query_var('monthnum');
 

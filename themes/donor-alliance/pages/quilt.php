@@ -19,6 +19,8 @@ if (__FILE__ == $_SERVER['SCRIPT_FILENAME']) { die(); }
 if (CFCT_DEBUG) { cfct_banner(__FILE__); }
 
 get_header();
+
+$quilt_submit = _x('Submit To The Quilt', 'Quilt submission button', 'da');
 ?>
 <div class="col col-abc">
 	<div id="quilt">
@@ -32,7 +34,7 @@ get_header();
 		?>
 	</div>
 	<div class="clearfix">
-		<a href="<?php echo da_get_page_url('submit-to-the-quilt'); ?>" class="btn btn-submit-to-the-quilt"><span>Submit To The Quilt</span></a>
+		<a href="<?php echo da_get_page_url('submit-to-the-quilt'); ?>" class="btn btn-submit-to-the-quilt"><span><?php echo $quilt_submit; ?></span></a>
 	</div>
 </div>
 <?php get_footer();

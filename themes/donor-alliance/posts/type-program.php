@@ -19,8 +19,11 @@ if (__FILE__ == $_SERVER['SCRIPT_FILENAME']) { die(); }
 if (CFCT_DEBUG) { cfct_banner(__FILE__); }
 
 get_header();
+
+$section_title = _x('Programs', 'Programs page.  Section title.', 'da');
+
 ?>
-	<h1 class="section-title">Programs</h1>
+	<h1 class="section-title"><?php echo $section_title; ?></h1>
 <?php
 cfct_loop();
 cfct_misc('nav-posts');
