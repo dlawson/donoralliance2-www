@@ -86,6 +86,10 @@ msgstr ""
 msgid "Their"
 msgstr ""
 
+#: content/custom-carousel-home.php:40
+msgid "Read %s Story"
+msgstr ""
+
 #: content/type-donor.php:24
 #: content/type-recipient.php:24
 #, php-format
