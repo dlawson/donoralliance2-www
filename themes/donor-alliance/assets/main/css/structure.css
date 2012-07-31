@@ -423,22 +423,13 @@ body.lang-es #nav-aux .nav-language .es a {
 	z-index: 100;
 }
 #carousel-main .pagination a {
-	display: -moz-inline-box; /* FF2 */
-	display: inline-block; /* Standard. IE8+, Saf, FF3+ */
-	/**
-	 * @bugfix inline-block fix
-	 * @see http://blog.mozilla.com/webdev/2009/02/20/cross-browser-inline-block/
-	 * @valid no
-	 */
-	zoom: 1;
-	*display: inline;
-
 	background: url(../img/sprite-y.24bit.png) 0 -100px;
+	float: left;
+	height: 7px;
 	margin-left: 14px;
-	padding-left: 7px;
-	padding-top: 7px;
 	overflow: hidden;
 	text-indent: -1000px;
+	width: 7px;
 }
 #carousel-main .pagination a.activeSlide {
 	background-position: right -100px;
