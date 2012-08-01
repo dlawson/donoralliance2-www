@@ -228,6 +228,8 @@ html.ie7 .gform_body .checkbox-radio-horizontal .gfield_checkbox li {
 }
 
 .gform_footer input[type="submit"]{
+	text-transform: capitalize; /* IE7 Hack - http://css-tricks.com/snippets/css/remove-button-text-in-ie7/ */
+
 	background:url(../img/submitBtn.png);
 	border:none;
 	float:right;
