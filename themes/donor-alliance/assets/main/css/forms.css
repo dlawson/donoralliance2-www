@@ -240,7 +240,7 @@ html.ie7 .gform_body .checkbox-radio-horizontal .gfield_checkbox li {
 .form-newsletter {
 	background-color: #fff;
 	border: #c6c6c6 solid 1px;
-	padding: 0 23px 0 9px;
+	padding: 4px 23px 4px 9px;
 	position: absolute;
 	right: 0;
 	top: 3px;
@@ -254,7 +254,6 @@ html .form-newsletter .gform_body .gfield {
 }
 .form-newsletter input[type='text'] {
 	border: 0;
-	height: 23px;
 	width: 160px;
 }
 .form-newsletter input[type="submit"] {
@@ -302,5 +301,14 @@ html .form-newsletter .gform_body .gfield {
 	padding-top: 0 !important;
 }
 
+input.watermark {
+	color: #b1b1b1;
+}
 
+input:placeholder, textarea:placeholder {
+	color: #b1b1b1;
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+	color: #b1b1b1;
+}
 
