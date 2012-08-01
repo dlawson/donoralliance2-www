@@ -90,7 +90,7 @@
 					quilt_ease_speed);
 					$quilt_link.addClass('shadow');
 
-					if ( is_ie7 ) {
+					if ( da_is_ie7 ) {
 						$quilt_link_container.css('z-index', 1000);
 					}
 				},
@@ -108,7 +108,7 @@
 					quilt_ease_speed);
 					$quilt_link.find('.overlay').show();
 
-					if ( is_ie7 ) {
+					if ( da_is_ie7 ) {
 						$quilt_link_container.css('z-index', 0);
 					}
 				}
