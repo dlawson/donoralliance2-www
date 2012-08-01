@@ -386,6 +386,7 @@ body.lang-es #nav-aux .nav-language .es a {
 	border-top: 0;
 	font-size: 80px;
 	padding-top: 2px; /* make room for graphical top border */
+	zoom: 1;
 }
 #carousel-main .type-donor .title {
 	background: url(../img/bdr-carousel-title-top-donor.png) center 0 no-repeat; /* Graphical top border */
