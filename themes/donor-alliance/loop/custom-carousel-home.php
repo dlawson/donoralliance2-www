@@ -28,7 +28,7 @@ query_posts($args);
 if (have_posts()) : ?>
 	<ul>
 	<?php while (have_posts()) : the_post(); ?>
-		<li><?php cfct_template_file('content', 'custom-carousel-home'); ?></li>
+		<li class="slide-container"><?php cfct_template_file('content', 'custom-carousel-home'); ?></li>
 	<?php endwhile; ?>
 	</ul>
 <?php endif;
