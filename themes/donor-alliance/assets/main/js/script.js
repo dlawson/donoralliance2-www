@@ -70,8 +70,7 @@
 		}
 		
 		if ($quilt.length > 0) {
-			var quilt_ease_speed = 50,
-				is_ie7 = $('html').hasClass('ie7');
+			var quilt_ease_speed = 50;
 
 
 
