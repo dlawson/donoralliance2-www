@@ -464,11 +464,12 @@ body.lang-es #nav-aux .nav-language .es a {
 	position: relative;
 }
 #footer .copyright {
-	display: inline-block;
+	float: left;
+	margin-top: 4px;
 }
 #nav-footer {
 	border-left: #999 solid 1px;
-	display: inline-block;
+	float: left;
 	margin-left: 17px;
 	position: relative;
 	top: 3px;
