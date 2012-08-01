@@ -392,6 +392,10 @@ body.lang-es #nav-aux .nav-language .es a {
 #carousel-main .title span {
 	padding: 17px 29px;
 }
+.ie7 #carousel-main .title span {
+	padding-bottom: 0;
+	padding-top: 0;
+}
 #carousel-main .subtitle {
 	font-size: 22px;
 	font-style: italic;
