@@ -38,7 +38,7 @@ global $post;
 
 	<?php wp_head(); ?>
 	<!--[if lte IE 7]>
-		<script src="<?php echo trailingslashit( get_bloginfo('template_url') ) ?>assets/main/js/lib/jquery-ie7.js" type="text/javascript" charset="utf-8"></script>
+		<script src="<?php echo trailingslashit( get_bloginfo('template_url') ) ?>assets/main/js/lib/jquery-ie7.js" type="text/javascript"></script>
 	<![endif]-->
 </head>
 <body <?php body_class(); ?>>
