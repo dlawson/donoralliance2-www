@@ -60,30 +60,48 @@
 		}
 		
 		if ($quilt.length > 0) {
-			var quilt_ease_speed = 50;
+			var quilt_ease_speed = 50,
+				is_ie7 = $('html').hasClass('ie7');
+
+
+
 			// Animate quilt items
 			$('#quilt a').hover(
 				function() {
-					$(this).find('.overlay').hide();
-					$(this).animate({
+					var $quilt_link = $(this),
+						$quilt_link_container = $quilt_link.closest('li');
+
+					$quilt_link.find('.overlay').hide();
+					$quilt_link.animate({
 						left: '-45px',
 						paddingBottom: '36px',
 						top: '-45px',
 						width: '250px'
 					},
 					quilt_ease_speed);
-					$(this).addClass('shadow');
+					$quilt_link.addClass('shadow');
+
+					if ( is_ie7 ) {
+						$quilt_link_container.css('z-index', 1000);
+					}
 				},
 				function() {
-					$(this).removeClass('shadow');
-					$(this).animate({
+					var $quilt_link = $(this),
+						$quilt_link_container = $quilt_link.closest('li');
+
+					$quilt_link.removeClass('shadow');
+					$quilt_link.animate({
 						left: '0',
 						paddingBottom: '0',
 						top: '0',
 						width: '161px'
 					},
 					quilt_ease_speed);
-					$(this).find('.overlay').show();
+					$quilt_link.find('.overlay').show();
+
+					if ( is_ie7 ) {
+						$quilt_link_container.css('z-index', 0);
+					}
 				}
 			);
 			
