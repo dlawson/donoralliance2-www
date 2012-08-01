@@ -200,14 +200,14 @@ function lrxd_get_the_post_thumbnail( $id, $size, $args=null ) {
 			$default_args = array(
 				'class' => 'featured-image',
 				'title' => '',
+				'alt' => '',
 			);
 
 			$thumbnail_args = ($args)
 				? array_merge($default_args, $args)
 				: $default_args;
-		
+			
 			return get_the_post_thumbnail($id, $size, $thumbnail_args);
-
 		}
 	}
 	else {
