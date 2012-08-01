@@ -326,6 +326,10 @@ body.lang-es #nav-aux .nav-language .es a {
 }
 #carousel-main {
 	position: relative;
+	visibility: hidden;
+}
+.no-js #carousel-main {
+	visibility: visible;
 }
 #carousel-main .slide-container {
 	background: transparent;

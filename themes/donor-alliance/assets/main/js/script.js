@@ -57,6 +57,8 @@
 			
 			/* Center Pagination in content area of slide */
 			$pagination.css( 'right', ($slide_content.width() - $pagination.outerWidth()) / 2 );
+			$carousel_main.hide().css('visibility', 'visible').fadeIn(100);
+
 		}
 		
 		if ($quilt.length > 0) {
