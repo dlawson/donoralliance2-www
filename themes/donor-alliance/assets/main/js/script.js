@@ -6,7 +6,9 @@
 			$win = $(window),
 			$header = $('#header'),
 			$carousel_main = $('#carousel-main'),
-			$quilt = $('#quilt');
+			$quilt = $('#quilt'),
+			da_is_ie7 = $('html').hasClass('ie7'),
+			da_is_ie8 = $('html').hasClass('ie8');
 
 		/* Keep Logo and Navbars centered */
 			$win.resize(function() {
