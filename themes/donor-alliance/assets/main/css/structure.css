@@ -327,8 +327,9 @@ body.lang-es #nav-aux .nav-language .es a {
 #carousel-main {
 	position: relative;
 }
-#carousel-main li {
+#carousel-main .slide-container {
 	background: transparent;
+	height: 526px;
 	width: 805px;
 }
 
