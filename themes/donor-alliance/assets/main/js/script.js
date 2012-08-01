@@ -44,18 +44,24 @@
 		
 		if ($carousel_main.length > 0) {
 			var $pagination = $carousel_main.find('.pagination'),
-				$slide_content = $carousel_main.find('.slide-content');
+				$slide_content = $carousel_main.find('.slide-content'),
+				cycle_args = {};
 			
-			$carousel_main.find('ul').cycle({
-				cleartypeNoBg: true,
-				fx: 'fade',
-				pager: $pagination,
-				pause: 1,
-				pauseOnPagerHover: 1,
-				speed: 1000,
-				sync: 1,
-				timeout: 9000
-			});
+
+			cycle_args.cleartypeNoBg = true;
+			cycle_args.fx = 'fade';
+			cycle_args.pager = $pagination;
+			cycle_args.pause = 1;
+			cycle_args.pauseOnPagerHover = 1;
+			cycle_args.speed = 1000;
+			cycle_args.sync = 1;
+			cycle_args.timeout = 9000;
+
+			// Flash and Cycle crossfade are not playing nicely in IE7 and IE8.
+			// Remove transition effect in this case.
+			if (da_is_ie7 || da_is_ie8) { cycle_args.fx = 'none'; }
+
+			$carousel_main.find('ul').cycle( cycle_args );
 			
 			/* Center Pagination in content area of slide */
 			$pagination.css( 'right', ($slide_content.width() - $pagination.outerWidth()) / 2 );
