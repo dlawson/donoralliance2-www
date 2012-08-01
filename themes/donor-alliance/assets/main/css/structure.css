@@ -401,6 +401,10 @@ body.lang-es #nav-aux .nav-language .es a {
 	margin-bottom: -10px;
 	text-transform: lowercase;
 }
+.ie7 #carousel-main .subtitle {
+	position: relative;
+	left: 3px;
+}
 #carousel-main .body {
 	margin-bottom: 10px;
 }
