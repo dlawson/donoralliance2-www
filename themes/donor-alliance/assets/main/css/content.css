@@ -25,6 +25,12 @@
 .content h6 {
 	margin-bottom: .25em;
 }
+/* Lists */
+.content ul, 
+.content ol { 
+	margin: 0 1.5em; 
+}
+
 
 .content ul,
 .content ol,
@@ -38,11 +44,7 @@
 	margin-right: 20px;
 }
 
-/* Lists */
-.content ul, 
-.content ol { 
-	margin: 0 1.5em; 
-}
+
 .content ul {
 	list-style-type: disc;
 } 
