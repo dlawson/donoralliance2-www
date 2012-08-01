@@ -375,11 +375,9 @@ body.lang-es #nav-aux .nav-language .es a {
 	
 	margin-bottom: 15px;
 }
-
 #carousel-main .title {
 	border: #00456a solid 2px;
 	border-top: 0;
-	display: inline;
 	font-size: 80px;
 	padding-top: 2px; /* make room for graphical top border */
 }
