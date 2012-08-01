@@ -37,8 +37,8 @@ global $post;
 	<link rel="pingback" href="<?php bloginfo('pingback_url') ?>" />
 
 	<?php wp_head(); ?>
-	<!--[if lte IE 7]>
-		<script src="<?php echo trailingslashit( get_bloginfo('template_url') ) ?>assets/main/js/lib/jquery-ie7.js" type="text/javascript"></script>
+	<!--[if lte IE 6]>
+		<script src="<?php echo trailingslashit( get_bloginfo('template_url') ) ?>assets/main/js/lib/jquery-ie6.js" type="text/javascript"></script>
 	<![endif]-->
 </head>
 <body <?php body_class(); ?>>
