@@ -21,7 +21,7 @@ load_theme_textdomain('da');
 
 define('CFCT_DEBUG', false);
 define('CFCT_PATH', trailingslashit(TEMPLATEPATH));
-define('THEME_VERSION', '1.0');
+define('THEME_VERSION', '1.0.1');
 define('CFCT_IS_PRODUCTION', false);
 define('LRXD_THEME_PREFIX', 'da');
 
