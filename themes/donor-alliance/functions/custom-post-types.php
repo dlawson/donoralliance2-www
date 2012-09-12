@@ -11,6 +11,29 @@ function da_register_custom_post_types() {
 	 */
 	define('DA_CPT_REWRITE_EVENT', 'events');
 	
+	/**
+	 * Quilt Square
+	 */
+	
+	$args = array(
+		'labels' => array(
+			'name' => __('Homepage Callouts', 'da-admin'),
+			'singular_name' => __('Callout', 'da-admin')
+		),
+		'description' => __('Content for callout row on homepage', 'da-admin'),
+		'public' => true,
+		'exclude_from_search' => true,
+		'show_ui' => true,
+		'has_archive' => false,
+		'hierarchical' => false,
+		'supports' => array(
+			'title',
+			'editor',
+			'page-attributes',
+		),
+		'capability_type' => 'post',
+	);
+	$cpt_args['homepage-callout'] = $args;	
 
 	/**
 	 * Donor Story

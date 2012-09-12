@@ -18,12 +18,18 @@
 if (__FILE__ == $_SERVER['SCRIPT_FILENAME']) { die(); }
 if (CFCT_DEBUG) { cfct_banner(__FILE__); }
 
-get_header();
+global $post;
 
-cfct_misc('carousel-home');
-cfct_template_file('loop', 'custom-grid-homepage-callout');
-// cfct_misc('buckets-home');
+$title = get_the_title($post->ID);
+$link = get_post_meta($post->ID, 'da-homepage-callout-link', true);
+$content = get_the_content();
 
-get_footer();
-
+$title = ($link=='')
+	? $title
+	:'<a href="'.$link.'">'.$title.'</a>';
+	
 ?>
+<h2 class="title"><?php echo $title; ?></h2>
+<div class="content">
+	<?php echo $content; ?>
+</div>

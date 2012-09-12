@@ -18,12 +18,25 @@
 if (__FILE__ == $_SERVER['SCRIPT_FILENAME']) { die(); }
 if (CFCT_DEBUG) { cfct_banner(__FILE__); }
 
-get_header();
+$args = array(
+	'post_type' => 'homepage-callout',
+	'posts_per_page' => 3,
+	'orderby'	=> 'menu_order',
+	'order' => 'ASC',
+);
+query_posts($args);
 
-cfct_misc('carousel-home');
-cfct_template_file('loop', 'custom-grid-homepage-callout');
-// cfct_misc('buckets-home');
-
-get_footer();
-
-?>
+if (have_posts()) : ?>
+	<ul class="buckets clearfix">
+	<?php
+	while (have_posts()) : the_post();
+		?>
+		<li>
+			<?php cfct_excerpt(); ?>
+		</li>
+		<?php
+	endwhile; 
+	?>
+	</ul>
+<?php endif;
+wp_reset_query();

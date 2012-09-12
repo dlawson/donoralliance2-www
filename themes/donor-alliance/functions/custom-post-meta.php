@@ -34,6 +34,27 @@ function da_create_post_meta() {
 		    ),
 		);	
 
+		/**
+		 * Homepage Callout
+		 */
+		
+		$post_type = 'homepage-callout';
+		$prefix = LRXD_THEME_PREFIX.'-'.$post_type.'-';
+		$meta_boxes[] = array(
+		    'id' => 'page-info',
+		    'title' => 'Callout Extras', 
+		    'pages' => array($post_type), 
+		    'context' => 'normal', 
+		    'priority' => 'high',
+		    'fields' => array(
+				array(
+					'name' => 'Callout Link URL',          
+					'id' => $prefix . 'link',      
+					'type' => 'text',               
+				),
+		    ),
+		);	
+
 	
 		/**
 		 * Donor / Recipient
