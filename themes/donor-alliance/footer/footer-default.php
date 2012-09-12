@@ -26,7 +26,7 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
 			<div class="in">
 				<div id="footer-interior">
 					<div class="body">
-							<p class="copyright">&copy;2012 Donor Alliance, Inc. <?php _e('All Rights Reserved'); ?></p>
+							<p class="copyright">&copy;2012 Donor Alliance, Inc. <?php _e('All Rights Reserved', 'da'); ?></p>
 							<?php
 							$args = array(
 								'theme_location'  => 'nav-footer',
