@@ -21,7 +21,7 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
 get_header();
 
 			$args = array(
-				'menu'            => 'our-stories-links', 
+				'theme_location'  => 'our-stories-links', 
 				'container'       => false, 
 				'container_id'    => false,
 				'menu_class'      => 'stories-links', 

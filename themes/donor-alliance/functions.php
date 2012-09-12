@@ -93,6 +93,7 @@ $nav_locations = array(
 	'nav-main' => 'Main Navigation',
 	'nav-sub' => 'Sub Navigation',
 	'nav-footer' => 'Footer Navigation',
+	'our-stories-links' => 'Our Stories Links',
 );
 register_nav_menus( $nav_locations );
 
