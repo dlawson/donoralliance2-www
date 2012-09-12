@@ -6,17 +6,33 @@
 	padding-top: 500px;
 	position: relative;
 }
-.page-template-page-our-stories-php .stories {
+
+.page-template-page-our-stories-php .stories-links a {
+	display: block;
+	overflow: hidden;
 	position: absolute;
+	text-indent: -10000px;
 }
-.page-template-page-our-stories-php .stories-donor {
+.page-template-page-our-stories-php .stories-links .menu-item-page-donor-family-stories a {
 	left: 52px;
 	top: -15px;
 }
-.page-template-page-our-stories-php .stories-recipient {
+
+.page-template-page-our-stories-php .stories-links .menu-item-page-recipient-stories a {
 	right: 0;
 	top: -0;
 }
+.page-template-page-our-stories-php .stories-links .menu-item-page-donor-family-stories a {
+	background: url('../img/imr-stories-donor.png') no-repeat;
+	width: 500px;
+	height: 502px;
+}
+.page-template-page-our-stories-php .stories-links .menu-item-page-recipient-stories a {
+	background: url('../img/imr-stories-recipient.png') no-repeat;
+	width: 522px;
+	height: 490px;
+}
+
 .page-template-page-our-stories-php .btn-share-your-story {
 	float: right;
 }

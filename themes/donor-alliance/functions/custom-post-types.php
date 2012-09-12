@@ -27,7 +27,7 @@ function da_register_custom_post_types() {
 		'publicly_queryable' => true,
 		'show_ui' => true,
 		'show_in_nav_menus' => true,
-		'has_archive' => true,
+		'has_archive' => false,
 		'hierarchical' => false,
 		'rewrite' => array('slug' => 'donors'),
 		'supports' => array(
@@ -58,7 +58,7 @@ function da_register_custom_post_types() {
 		'publicly_queryable' => true,
 		'show_ui' => true,
 		'show_in_nav_menus' => true,
-		'has_archive' => true,
+		'has_archive' => false,
 		'hierarchical' => false,
 		'rewrite' => array('slug' => 'recipients'),
 		'supports' => array(

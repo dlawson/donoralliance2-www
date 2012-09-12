@@ -1,4 +1,8 @@
 <?php
+/*
+Template Name: Page - Stories - Recipient
+*/
+
 
 // This file is part of the Carrington JAM Theme for WordPress
 // http://carringtontheme.com
@@ -16,24 +20,9 @@
 // **********************************************************************
 
 if (__FILE__ == $_SERVER['SCRIPT_FILENAME']) { die(); }
-if (CFCT_DEBUG) { cfct_banner(__FILE__); }
 
-get_header();
-$content = cfct_get_option('recipient-intro');
-$section_title = _x('Recipient Stories', 'Recipient Stories page.  Section title.', 'da');
+// NOTE: this file is here for compatibility reasons - active templates are in the pages/ dir 
+
+cfct_page('stories-recipient');
 
 ?>
-<section class="page-archive-donor">
-	<h1 class="section-title"><?php echo $section_title; ?></h1>
-	<?php if ($content): ?>
-		<div class="page-content">
-			<?php echo $content; ?>
-		</div>		
-	<?php endif ?>
-
-	<?php echo DA_BTN_SHARE_YOUR_STORY; ?>
-</section>	
-<?php 
-
-cfct_template_file('loop', 'custom-grid-recipient');
-get_footer();

@@ -18,10 +18,16 @@
 if (__FILE__ == $_SERVER['SCRIPT_FILENAME']) { die(); }
 if (CFCT_DEBUG) { cfct_banner(__FILE__); }
 
-get_header();
-$content = cfct_get_option('donor-intro');
+global $post;
 
-$section_title = _x('Donor Family Stories', 'Donor Family Stories list page.  Section title.', 'da');
+
+get_header();
+
+while ( have_posts() ) : the_post();
+	$content = get_the_content();
+	$section_title = get_the_title($post->ID);
+endwhile;
+
 
 
 ?>
@@ -32,9 +38,11 @@ $section_title = _x('Donor Family Stories', 'Donor Family Stories list page.  Se
 			<?php echo $content; ?>
 		</div>		
 	<?php endif ?>
+
 	<?php echo DA_BTN_SHARE_YOUR_STORY; ?>
 </section>	
-<?php 
-
-cfct_template_file('loop', 'custom-grid-donor');
+<div class="archive post-type-archive-recipient">
+	<?php cfct_template_file('loop', 'custom-grid-recipient'); ?>
+</div>
+<?php
 get_footer();

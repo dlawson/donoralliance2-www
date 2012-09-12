@@ -1,4 +1,8 @@
 <?php
+/*
+Template Name: Page - Stories - Donor Family
+*/
+
 
 // This file is part of the Carrington JAM Theme for WordPress
 // http://carringtontheme.com
@@ -16,24 +20,9 @@
 // **********************************************************************
 
 if (__FILE__ == $_SERVER['SCRIPT_FILENAME']) { die(); }
-if (CFCT_DEBUG) { cfct_banner(__FILE__); }
 
-get_header();
+// NOTE: this file is here for compatibility reasons - active templates are in the pages/ dir 
 
-			$args = array(
-				'menu'            => 'our-stories-links', 
-				'container'       => false, 
-				'container_id'    => false,
-				'menu_class'      => 'stories-links', 
-				'echo'            => true,
-			);
-			wp_nav_menu( $args );
+cfct_page('stories-donor-family');
+
 ?>
-
-
-<!-- <a href="<?php echo da_get_site_url().DA_ARCHIVE_URL_DONORS; ?>" class="stories stories-donor imr imr-stories-donor">Donor Stories</a>
-<a href="<?php echo da_get_site_url().DA_ARCHIVE_URL_RECIPIENTS; ?>" class="stories stories-recipient imr imr-stories-recipient">Recipient Stories</a>
- -->
-<?php
-echo DA_BTN_SHARE_YOUR_STORY;
-get_footer();

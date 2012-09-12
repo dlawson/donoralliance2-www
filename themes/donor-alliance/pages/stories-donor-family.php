@@ -20,20 +20,24 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
 
 get_header();
 
-			$args = array(
-				'menu'            => 'our-stories-links', 
-				'container'       => false, 
-				'container_id'    => false,
-				'menu_class'      => 'stories-links', 
-				'echo'            => true,
-			);
-			wp_nav_menu( $args );
+while ( have_posts() ) : the_post();
+	$content = get_the_content();
+	$section_title = get_the_title($post->ID);
+endwhile;
+
 ?>
+<section class="page-archive-donor">
+	<h1 class="section-title"><?php echo $section_title; ?></h1>
+	<?php if ($content): ?>
+		<div class="page-content">
+			<?php echo $content; ?>
+		</div>		
+	<?php endif ?>
+	<?php echo DA_BTN_SHARE_YOUR_STORY; ?>
+</section>	
 
-
-<!-- <a href="<?php echo da_get_site_url().DA_ARCHIVE_URL_DONORS; ?>" class="stories stories-donor imr imr-stories-donor">Donor Stories</a>
-<a href="<?php echo da_get_site_url().DA_ARCHIVE_URL_RECIPIENTS; ?>" class="stories stories-recipient imr imr-stories-recipient">Recipient Stories</a>
- -->
+<div class="archive post-type-archive-donor">
+	<?php cfct_template_file('loop', 'custom-grid-donor'); ?>
+</div>
 <?php
-echo DA_BTN_SHARE_YOUR_STORY;
 get_footer();
