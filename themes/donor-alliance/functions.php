@@ -38,8 +38,8 @@ include_once(CFCT_PATH.'functions/actions.php');
 include_once(CFCT_PATH.'functions/filters.php');
 
 
-$btn_share_your_story_text = _x('Share Your Story', 'Text for link to Share Your Story page', 'da');
-define( 'DA_BTN_SHARE_YOUR_STORY', '<a href="'.da_get_page_url('submit-a-story').'" class="btn btn-share-your-story"><span>'.$btn_share_your_story_text.'</span></a>');
+
+define( 'DA_BTN_SHARE_YOUR_STORY', lrxd_get_link_share_your_story() );
 define( 'DA_ARCHIVE_URL_DONORS', 'donors/');
 define( 'DA_ARCHIVE_URL_RECIPIENTS', 'recipients/');
 define( 'DA_URL_HOME', (function_exists('icl_get_languages')) ? icl_get_home_url() : site_url() );
@@ -221,4 +221,10 @@ function lrxd_the_post_thumbnail($size, $args=null) {
 	global $post;
 	
 	echo lrxd_get_the_post_thumbnail($post->ID, $size, $args=null);
+}
+function lrxd_get_link_share_your_story() {
+	if(ICL_LANGUAGE_CODE == 'en') {
+		$btn_share_your_story_text = _x('Share Your Story', 'Text for link to Share Your Story page', 'da');
+		return '<a href="'.da_get_page_url('submit-a-story').'" class="btn btn-share-your-story"><span>'.$btn_share_your_story_text.'</span></a>';
+	}
 }
