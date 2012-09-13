@@ -14,25 +14,22 @@
 	text-indent: -10000px;
 }
 .page-template-page-our-stories-php .stories-links .menu-item-page-donor-family-stories a {
+	background: url('../img/imr-stories-donor.png') no-repeat;
+	height: 502px;
 	left: 52px;
 	top: -15px;
+	width: 500px;
+	z-index: 2;
 }
 
-.page-template-page-our-stories-php .stories-links .menu-item-page-recipient-stories a {
-	right: 0;
-	top: -0;
-}
-.page-template-page-our-stories-php .stories-links .menu-item-page-donor-family-stories a {
-	background: url('../img/imr-stories-donor.png') no-repeat;
-	width: 500px;
-	height: 502px;
-}
 .page-template-page-our-stories-php .stories-links .menu-item-page-recipient-stories a {
 	background: url('../img/imr-stories-recipient.png') no-repeat;
-	width: 522px;
 	height: 490px;
+	right: 0;
+	top: -0;
+	width: 522px;
+	z-index: 3;
 }
-
 .page-template-page-our-stories-php .btn-share-your-story {
 	float: right;
 }
