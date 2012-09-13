@@ -95,6 +95,7 @@ $nav_locations = array(
 	'nav-sub' => 'Sub Navigation',
 	'nav-footer' => 'Footer Navigation',
 	'our-stories-links' => 'Our Stories Links',
+	'link-submit-to-the-quilt' => 'Link - Submit To The Quilt'
 );
 register_nav_menus( $nav_locations );
 

@@ -809,7 +809,9 @@ body.lang-es #nav-aux .nav-language .es a {
 	box-shadow: 10px 10px 45px rgba(0, 0, 0, .6); /* Standard. Opera 10.5, IE9 */
 }
 .btn-back-to-the-form,
-.btn-submit-to-the-quilt {
+.menu-link-submit-to-the-quilt,
+/*.btn-submit-to-the-quilt,*/
+#selector {
 	float: right;
 }
 

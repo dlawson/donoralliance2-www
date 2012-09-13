@@ -38,6 +38,11 @@
 .nav .sub-menu li {
 	float: none;
 }
+
+/**
+ *	Button Styles
+ */
+.menu-link a,
 a.btn {
 	display: -moz-inline-box; /* FF2 */
 	display: inline-block; /* Standard. IE8+, Saf, FF3+ */
@@ -54,9 +59,11 @@ a.btn {
 	font-size: 13px;
 	padding: 7px 11px;
 }
+.menu-link a:hover,
 a.btn:hover {
 	text-decoration: none;
 }
+.menu-link a span,
 a.btn span {
 	background: url(../img/sprite-y.24bit.png) right 3px no-repeat;
 	padding-right: 10px;
