@@ -18,17 +18,17 @@
  * Typography
  */
 
-#carousel-main .title,
+/*#carousel-main .title,
 #nav-aux,
 .btn,
 .button,
 .archive .post-event .more,
-/*.section-title,*/
+.section-title,
 .widget_archive_event {
 	font-family: 'lato', sans-serif;
 	letter-spacing: 1px;
 	text-transform: uppercase;
-}
+}*/
 
 
 /**
