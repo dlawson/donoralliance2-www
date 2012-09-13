@@ -43,6 +43,15 @@
 }
 
 /**
+ *  Forms
+ */
+
+.gform_footer input[type="submit"]{
+    background:url(../img/submitBtn.png);
+}
+
+
+/**
  *  Templates
  */
 
