@@ -23,15 +23,9 @@ get_header();
 $quilt_submit = _x('Submit To The Quilt', 'Quilt submission button', 'da');
 ?>
 <div class="col col-abc">
+	<?php cfct_loop(); // Regular loop to add in page content ?>
 	<div id="quilt">
-		
-		<?php 
-			// Regular loop to add in page content
-			cfct_loop();
-			
-			// Custom loop to add in quilt content
-			cfct_template_file('loop', 'custom-quilt'); 
-		?>
+		<?php cfct_template_file('loop', 'custom-quilt'); // Custom loop to add in quilt content ?>
 	</div>
 	<div class="clearfix">
 		<a href="<?php echo da_get_page_url('submit-to-the-quilt'); ?>" class="btn btn-submit-to-the-quilt"><span><?php echo $quilt_submit; ?></span></a>
