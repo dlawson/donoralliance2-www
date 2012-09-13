@@ -37,6 +37,7 @@
 
 #carousel-main .type-donor .title {
     background-image: url(../img/bdr-carousel-title-top-donor.png); /* Graphical top border */
+    max-width: 300px;
 }
 #nav-aux .nav-donor .sub-menu-container {
 	left: -14px;
