@@ -32,7 +32,7 @@ endwhile;
 
 ?>
 <section class="page-archive-donor">
-	<h1 class="section-title"><?php echo $section_title; ?></h1>
+	<h1 class="title"><?php echo $section_title; ?></h1>
 	<?php if ($content): ?>
 		<div class="page-content">
 			<?php echo $content; ?>
