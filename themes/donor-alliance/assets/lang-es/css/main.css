@@ -49,7 +49,18 @@
 .gform_footer input[type="submit"]{
     background:url(../img/submitBtn.png);
 }
-
+.form-newsletter input[type="submit"] {
+    background: url(../../main/img/sprite-y.24bit.png) 116px -291px;
+    border: 0;
+    display: block;
+    height: 23px;
+    overflow: hidden;
+    position: absolute;
+    right: 1px;
+    text-indent: -1000px;
+    top: 1px;
+    width: 23px;
+}
 
 /**
  *  Templates
