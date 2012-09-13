@@ -218,11 +218,6 @@ body.lang-es #nav-aux .nav-language .es a {
 	color: #3a90d5;
 }
 
-/** ~~~ hide lang nav */
-#nav-aux .nav-language {
-	display: none;
-}
-
 #nav-aux .nav-join,
 #nav-aux .nav-social {
 	border-left: #c6c6c6 solid 1px;

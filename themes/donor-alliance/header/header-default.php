@@ -46,11 +46,9 @@ global $post;
 		<header id="header">
 			<div class="in">
 				<nav id="nav-aux" class="clearfix">
-					<ul class="nav nav-language">
-						<li class="en"><a href="/">Eng</a></li>
-						<li class="es"><a href="/?lang=es">Esp</a></li>
-					</ul>
 					<?php
+					cfct_misc('language-selector');
+
 					$args_join = array(
 						'theme_location'  => 'nav-aux-join',
 						'container'       => false, 
