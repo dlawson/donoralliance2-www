@@ -39,17 +39,18 @@ include_once(CFCT_PATH.'functions/filters.php');
 
 
 $btn_share_your_story_text = _x('Share Your Story', 'Text for link to Share Your Story page', 'da');
-define('DA_BTN_SHARE_YOUR_STORY', '<a href="'.da_get_page_url('submit-a-story').'" class="btn btn-share-your-story"><span>'.$btn_share_your_story_text.'</span></a>');
-define('DA_ARCHIVE_URL_DONORS', 'donors/');
-define('DA_ARCHIVE_URL_RECIPIENTS', 'recipients/');
+define( 'DA_BTN_SHARE_YOUR_STORY', '<a href="'.da_get_page_url('submit-a-story').'" class="btn btn-share-your-story"><span>'.$btn_share_your_story_text.'</span></a>');
+define( 'DA_ARCHIVE_URL_DONORS', 'donors/');
+define( 'DA_ARCHIVE_URL_RECIPIENTS', 'recipients/');
+define( 'DA_URL_HOME', (function_exists('icl_get_languages')) ? icl_get_home_url() : site_url() );
 
 
-define('DA_IMAGE_DONOR_FEATURED_HOME_WIDTH', 614);
-define('DA_IMAGE_DONOR_FEATURED_HOME_HEIGHT', 472);
-define('DA_IMAGE_DONOR_FEATURED_SINGLE_WIDTH', 352);
-define('DA_IMAGE_DONOR_FEATURED_SINGLE_HEIGHT', 377);
-define('DA_IMAGE_DONOR_FEATURED_TOUT_WIDTH', 255);
-define('DA_IMAGE_DONOR_FEATURED_TOUT_HEIGHT', 190);
+define( 'DA_IMAGE_DONOR_FEATURED_HOME_WIDTH', 614 );
+define( 'DA_IMAGE_DONOR_FEATURED_HOME_HEIGHT', 472 );
+define( 'DA_IMAGE_DONOR_FEATURED_SINGLE_WIDTH', 352 );
+define( 'DA_IMAGE_DONOR_FEATURED_SINGLE_HEIGHT', 377 );
+define( 'DA_IMAGE_DONOR_FEATURED_TOUT_WIDTH', 255 );
+define( 'DA_IMAGE_DONOR_FEATURED_TOUT_HEIGHT', 190 );
 
 
 global $da_social;

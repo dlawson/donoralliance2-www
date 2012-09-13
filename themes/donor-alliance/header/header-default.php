@@ -75,9 +75,9 @@ global $post;
 			</div>
 			<div class="body">
 				<?php 
-					$site_name = _x('Donor Alliance - Organ &amp; Tissue Donation', 'The company name, as it appears in the site logo.  This is image-replaced text, for accessibility purposes only.', $domain = 'da');
+					$site_name = _x('Donor Alliance - Organ &amp; Tissue Donation', 'The company name, as it appears in the site logo.  This is image-replaced text, for accessibility purposes only.', 'da');
 				?>
-				<h1 id="site-name"><a id="site-logo" href="<?php echo site_url(); ?>" class="imr"><?php echo $site_name; ?></a></h1>
+				<h1 id="site-name"><a id="site-logo" href="<?php echo DA_URL_HOME; ?>" class="imr"><?php echo $site_name; ?></a></h1>
 				<nav id="nav-main" class="clearfix">
 					<div id="nav-main-interior">
 						<?php
