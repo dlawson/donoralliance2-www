@@ -24,12 +24,10 @@ $title = get_the_title($post->ID);
 $link = get_post_meta($post->ID, 'da-homepage-callout-link', true);
 $content = get_the_content();
 
-$title = ($link=='')
-	? $title
-	:'<a href="'.$link.'">'.$title.'</a>';
-	
+$link = ($link) ? $link : '#';
+
 ?>
-<h2 class="title"><?php echo $title; ?></h2>
+<h2 class="title"><a href="<?php echo $link; ?>"><?php echo $title; ?></a></h2>
 <div class="content">
 	<?php echo $content; ?>
 </div>
