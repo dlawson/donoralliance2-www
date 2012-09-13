@@ -2,8 +2,8 @@
 	global $post; 
 	$post_type = $post->post_type; 
 	
-	$story_type_donor_family = _x('Donor Family', 'Donor Story type label on homepage carousel', 'da');
-	$story_type_recipient = _x('Recipient', 'Donor Story type label on homepage carousel', 'da');
+	$story_type_donor_family = _x('Donor Family', 'Donor Story type label on homepage carousel - Donor Family', 'da');
+	$story_type_recipient = _x('Recipient', 'Donor Story type label on homepage carousel - Recipient', 'da');
 
 	switch ($post_type) {
 		case 'donor':
