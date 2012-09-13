@@ -36,7 +36,12 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
 								'echo'            => true,
 							);
 							wp_nav_menu( $args );
-							cfct_form('newsletter');
+
+							// Only display Newsletter Signup for English
+							if (ICL_LANGUAGE_CODE == 'en') {
+								cfct_form('newsletter');
+							}
+							
 						?>
 					</div>
 				</div>
