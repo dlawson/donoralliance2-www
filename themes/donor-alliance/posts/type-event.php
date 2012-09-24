@@ -43,7 +43,7 @@ get_header();
 <div class="col col-ab">
 	<?php
 		cfct_loop();
-		cfct_misc('nav-posts');
+		// cfct_misc('nav-posts');
 	?>
 </div>
 <div class="col col-c">
