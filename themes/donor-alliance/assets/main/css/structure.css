@@ -91,7 +91,6 @@ html.no-js #nav-sub {
 #nav-main .nav,
 #nav-sub .nav {
 	margin-left: 35px;
-	width: 770px;
 }
 
 #nav-main a,
@@ -99,21 +98,23 @@ html.no-js #nav-sub {
 	color: #fff;
 	display: block;
 }
-
+#nav-main .nav {
+	padding: 20px 0;
+}
 #nav-main li {
-	padding-left: 26px;
+	padding-right: 26px;
 	position: relative;
 	zoom: 1;
 }
 .ie7 #nav-main li,
 .ie8 #nav-main li {
-	padding-left: 22px;
+	padding-right: 22px;
 }
-html #nav-main li:first-child {
+/*html #nav-main li:first-child {
 	padding-left: 0;
-}
+}*/
 #nav-main a {
-	padding: 28px 0;
+	padding: 8px 0;
 }
 
 .ancestor-why-donate #nav-main .menu-item-page-why-donate .indicator,
