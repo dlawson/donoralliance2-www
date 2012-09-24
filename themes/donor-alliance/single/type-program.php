@@ -19,38 +19,40 @@ if (__FILE__ == $_SERVER['SCRIPT_FILENAME']) { die(); }
 if (CFCT_DEBUG) { cfct_banner(__FILE__); }
 global $post;
 
-
-
-$dd_args = array(
-	'post_type'	=> 'program',
-	'name' => 'donor-dash',
-);
-$dd_query = new WP_Query($dd_args);
-$dd_container = $dd_query->get_posts();
-$dd = $dd_container[0];
-
-
-
 $has_siderail = false;
-$content_class = 'col-abc';
 
-$valid_dd_ids = array($post->ID, $post->post_parent);
-
-
-if (in_array($dd->ID, $valid_dd_ids )) {
-	$has_siderail = true;
-	$content_class = 'col-bc';
-	
-	$args = array(
-		'container'     => 'nav', 
-		'container_id'	=> 'nav-siderail',
-		'menu' 			=> 'section-donor-dash',
-		'menu_class'    => 'nav nav-donor-dash', 
-		'echo'			=> false,
+if (ICL_LANGUAGE_CODE == 'en') {
+	$dd_args = array(
+		'post_type'	=> 'program',
+		'name' => 'donor-dash',
 	);
-	$siderail = wp_nav_menu( $args );
-}
+	$dd_query = new WP_Query($dd_args);
+	$dd_container = $dd_query->get_posts();
+	$dd = $dd_container[0];
 
+
+
+
+	$content_class = 'col-abc';
+
+	$valid_dd_ids = array($post->ID, $post->post_parent);
+
+
+	if (in_array($dd->ID, $valid_dd_ids )) {
+		$has_siderail = true;
+		$content_class = 'col-bc';
+		
+		$args = array(
+			'container'     => 'nav', 
+			'container_id'	=> 'nav-siderail',
+			'menu' 			=> 'section-donor-dash',
+			'menu_class'    => 'nav nav-donor-dash', 
+			'echo'			=> false,
+		);
+		$siderail = wp_nav_menu( $args );
+	}
+
+}
 
 
 
