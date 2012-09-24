@@ -91,6 +91,7 @@ html.no-js #nav-sub {
 #nav-main .nav,
 #nav-sub .nav {
 	margin-left: 35px;
+	min-width: 770px;
 }
 
 #nav-main a,
